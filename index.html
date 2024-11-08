@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NGO Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header id="header">
+    <nav>
+      <div class="logo">HUM<span>ANITY</span></div>
+      <button id="theme-toggle" class="button">Switch to Light Mode</button>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#volunteer">Volunteer</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="home-content">
+      <h1 id="color">We Stand for <span>Humanity</span></h1>
+      <p id="red">Our mission is to improve the quality of life through direct community involvement and education.</p>
+      <a href="#donate" class="btn">Donate Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-header">
+      <h2>About Us</h2>
+      <p>Our NGO has been working to empower individuals and uplift communities through various social initiatives.</p>
+    </div>
+    <div class="about-content">
+      <img src="images/about.jpg" alt="Our Team">
+      <div class="text">
+        <h3>Who We Are</h3>
+        <p>We are a group of dedicated individuals who are committed to making the world a better place.</p>
+        <a href="#services" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="section-header">
+      <h2>Our Services</h2>
+      <p>We offer a wide range of services to help the community, including education, healthcare, and emergency relief.</p>
+    </div>
+    <div class="service-container">
+      <div class="service-box">
+        <i class="fas fa-heart"></i>
+        <h3>Community Health</h3>
+        <p>We provide healthcare services to underprivileged communities and organize free health camps.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-book"></i>
+        <h3>Education Support</h3>
+        <p>Our educational programs provide free schooling materials and guidance to children in need.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-home"></i>
+        <h3>Disaster Relief</h3>
+        <p>We assist communities affected by natural disasters by providing food, shelter, and medical assistance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer Section -->
+  <section id="volunteer">
+    <div class="section-header">
+      <h2>Volunteer with Us</h2>
+      <p>Join our team and help make a difference in the lives of those in need.</p>
+    </div>
+    <div class="volunteer-content">
+      <form action="submit-volunteer.php" method="POST">
+        <div class="form-group">
+          <label for="volunteer-name">Name</label>
+          <input type="text" id="volunteer-name" name="volunteer-name" required>
+        </div>
+        <div class="form-group">
+          <label for="volunteer-email">Email</label>
+          <input type="email" id="volunteer-email" name="volunteer-email" required>
+        </div>
+        <div class="form-group">
+          <label for="volunteer-phone">Phone</label>
+          <input type="tel" id="volunteer-phone" name="volunteer-phone" required>
+        </div>
+        <button type="submit" class="btn">Apply Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events">
+    <div class="section-header">
+      <h2>Our Events</h2>
+      <p>Explore our upcoming and past events where we connect with the community.</p>
+    </div>
+    <div class="events-container">
+      <div class="event">
+        <h3>Health Camp 2024</h3>
+        <p>Date: March 25, 2024</p>
+        <p>Location: Community Hall</p>
+        <p>We are organizing a free health check-up camp for underprivileged families.</p>
+      </div>
+      <div class="event">
+        <h3>Education Fair</h3>
+        <p>Date: June 10, 2024</p>
+        <p>Location: City School Auditorium</p>
+        <p>An initiative to provide educational resources and counseling to students.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team">
+    <div class="section-header">
+      <h2>Meet Our Team</h2>
+      <p>We have a diverse team of passionate individuals committed to making a difference.</p>
+    </div>
+    <div class="team-container">
+      <div class="team-member">
+        <img src="john.jpg" alt="Team Member">
+        <h3>John Doe</h3>
+        <p>Founder & CEO</p>
+      </div>
+      <div class="team-member">
+        <img src="jane.jpg" alt="Team Member">
+        <h3>Jane Smith</h3>
+        <p>Program Director</p>
+      </div>
+      <div class="team-member">
+        <img src="mark.jpg" alt="Team Member">
+        <h3>Mark Johnson</h3>
+        <p>Volunteer Coordinator</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <div class="section-header">
+      <h2>Testimonials</h2>
+      <p>Hear what our beneficiaries and partners have to say about our work.</p>
+    </div>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <p>"The NGO has transformed our village with their consistent efforts in healthcare and education."</p>
+        <h3>- Maria, Beneficiary</h3>
+      </div>
+      <div class="testimonial">
+        <p>"Their dedication to helping people in crisis is truly commendable. I'm proud to support them."</p>
+        <h3>- Alex, Donor</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <div class="section-header">
+      <h2>Our Blog</h2>
+      <p>Read inspiring stories and updates from our NGO's work across various communities.</p>
+    </div>
+    <div class="blog-container">
+      <div class="blog-post">
+        <h3>How Education Changed Lives in Rural Areas</h3>
+        <p>Education is the key to empowerment, and we have seen lives transformed in rural areas through our programs.</p>
+        <a href="blog1.html" class="btn">Read More</a>
+      </div>
+      <div class="blog-post">
+        <h3>Impact of Disaster Relief in 2023</h3>
+        <p>Our disaster relief efforts made a significant impact during the floods last year. Here's what we learned.</p>
+        <a href="blog2.html" class="btn">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donate Section -->
+  <section id="donate">
+    <div class="section-header">
+      <h2>Make a Donation</h2>
+      <p>Your contributions can help us continue our mission of helping those in need. Every little bit counts.</p>
+    </div>
+    <div class="donate-content">
+      <form
+      <!-- Contact Section -->
+<section id="contact">
+  <div class="contact-background">
+    <div class="section-header">
+      <h2>Get in Touch</h2>
+      <p>We’re here to help and answer any question you might have. We look forward to hearing from you!</p>
+    </div>
+    <div class="contact-container">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 NGO Street, City, Country</p>
+        <p><i class="fas fa-phone-alt"></i> +123 456 7890</p>
+        <p><i class="fas fa-envelope"></i> info@ngo-website.org</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <!-- Optional Google Map Embed -->
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps/embed?pb=your-map-embed-code" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form action="submit-contact.php" method="POST">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-row">
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>We are a nonprofit organization dedicated to making a difference. Join us in our mission to help those in need.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="#"><i class="fas fa-hand-holding-heart"></i> Donate</a></li>
+          <li><a href="#"><i class="fas fa-users"></i> Volunteer</a></li>
+          <li><a href="#"><i class="fas fa-phone"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 HUM ANITY. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
